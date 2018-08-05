@@ -21,3 +21,36 @@ This code first download the dataset zip file in a folder called Data then unzip
 the train and test folders and merge these files to create one new dataset. After this, it subsets only the measurements on the mean and standard deviation for each measurement, 
 use the **activity_labels** file to name the activity in the new dataset and refine the dataset with appropriated names.
 Finally it creates a different dataset from the previous one with the average of each variable for each activity and each subject, the **tidydata** file.
+
+<br/>The **tidydata** file is composed of 180 observations and 68 variables. <br/>The variables are: "Subject",                                        "Activity","TimeBodyAccelerometer-mean()-X","TimeBodyAccelerometer-mean()-Y",
+"TimeBodyAccelerometer-mean()-Z"               ,"TimeBodyAccelerometer-std()-X", 
+"TimeBodyAccelerometer-std()-Y",               "TimeBodyAccelerometer-std()-Z"   
+,"TimeGravityAccelerometer-mean()-X",           "TimeGravityAccelerometer-mean()-Y"             
+ ,"TimeGravityAccelerometer-mean()-Z",              "TimeGravityAccelerometer-std()-X"              
+ ,"TimeGravityAccelerometer-std()-Y",               "TimeGravityAccelerometer-std()-Z"              
+ ,"TimeBodyAccelerometerJerk-mean()-X",             "TimeBodyAccelerometerJerk-mean()-Y"            
+ ,"TimeBodyAccelerometerJerk-mean()-Z",             "TimeBodyAccelerometerJerk-std()-X"             
+ ,"TimeBodyAccelerometerJerk-std()-Y",              "TimeBodyAccelerometerJerk-std()-Z"             
+ ,"TimeBodyGyroscope-mean()-X",                     "TimeBodyGyroscope-mean()-Y"                    
+ ,"TimeBodyGyroscope-mean()-Z",                     "TimeBodyGyroscope-std()-X"                     
+ ,"TimeBodyGyroscope-std()-Y",                      "TimeBodyGyroscope-std()-Z"                     
+,"TimeBodyGyroscopeJerk-mean()-X",                 "TimeBodyGyroscopeJerk-mean()-Y"                
+,"TimeBodyGyroscopeJerk-mean()-Z",                 "TimeBodyGyroscopeJerk-std()-X"                 
+ ,"TimeBodyGyroscopeJerk-std()-Y" ,                  "TimeBodyGyroscopeJerk-std()-Z"                 
+,"TimeBodyAccelerometerMagnitude-mean()"     ,     "TimeBodyAccelerometerMagnitude-std()"          
+,"TimeGravityAccelerometerMagnitude-mean()"  ,      "TimeGravityAccelerometerMagnitude-std()"       
+,"TimeBodyAccelerometerJerkMagnitude-mean()" ,      "TimeBodyAccelerometerJerkMagnitude-std()"      
+,"TimeBodyGyroscopeMagnitude-mean()"            ,  "TimeBodyGyroscopeMagnitude-std()"              ,"TimeBodyGyroscopeJerkMagnitude-mean()"       ,   "TimeBodyGyroscopeJerkMagnitude-std()"          
+,"FrequencyBodyAccelerometer-mean()-X"        ,    "FrequencyBodyAccelerometer-mean()-Y"           
+,"FrequencyBodyAccelerometer-mean()-Z"       ,     "FrequencyBodyAccelerometer-std()-X"            
+,"FrequencyBodyAccelerometer-std()-Y"       ,      "FrequencyBodyAccelerometer-std()-Z"            
+,"FrequencyBodyAccelerometerJerk-mean()-X" ,       "FrequencyBodyAccelerometerJerk-mean()-Y"       
+,"FrequencyBodyAccelerometerJerk-mean()-Z",        "FrequencyBodyAccelerometerJerk-std()-X"        
+,"FrequencyBodyAccelerometerJerk-std()-Y",         "FrequencyBodyAccelerometerJerk-std()-Z"        
+,"FrequencyBodyGyroscope-mean()-X" ,               "FrequencyBodyGyroscope-mean()-Y"               
+,"FrequencyBodyGyroscope-mean()-Z",                "FrequencyBodyGyroscope-std()-X"                
+,"FrequencyBodyGyroscope-std()-Y",                 "FrequencyBodyGyroscope-std()-Z"                
+,"FrequencyBodyAccelerometerMagnitude-mean()",     "FrequencyBodyAccelerometerMagnitude-std()"     
+,"FrequencyBodyAccelerometerJerkMagnitude-mean()", "FrequencyBodyAccelerometerJerkMagnitude-std()" 
+,"FrequencyBodyGyroscopeMagnitude-mean()",          "FrequencyBodyGyroscopeMagnitude-std()"       ,"FrequencyBodyGyroscopeJerkMagnitude-mean()"   ,   "FrequencyBodyGyroscopeJerkMagnitude-std()"  
+<br/> "Subject" is a int class, "Activity" a factor class and the rest of the variables are of num class. 
